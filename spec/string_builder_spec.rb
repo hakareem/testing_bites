@@ -8,7 +8,7 @@ RSpec.describe StringBuilder do
   expect(result).to eq 6
  end
 
- it "returns the string content" do
+ it "returns the content inside the string" do
   str = StringBuilder.new
   str.add("water")
   result = str.output

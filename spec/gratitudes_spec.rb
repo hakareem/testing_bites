@@ -10,7 +10,7 @@ RSpec.describe Gratitudes do
   expect(grat.format).to eq "Be grateful for: Health, Friends"
  end
 
- it "returns an empty array if user doesn't add any gratitudes" do
+ it "returns an empty list of gratitudes if user doesn't add any gratitudes" do
   grat = Gratitudes.new
   expect(grat.format).to eq "Be grateful for: "
  end

@@ -9,7 +9,7 @@ RSpec.describe Reminder do
   expect(result).to eq "Run, Josh!"
  end
 
- context "when nothing has been set" do
+ context "when no reminder has been set" do
  it "fails" do
   reminder = Reminder.new("Harith")
   expect {reminder.remind()}.to raise_error "No reminder set!"

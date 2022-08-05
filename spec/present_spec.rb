@@ -10,8 +10,8 @@ RSpec.describe Present do
   end
  end
 
- context "when no contents have been added" do
- it "fails if no contents have been wrapped" do
+ context "when no contents have been wrapped" do
+ it "fails if user trys to unwrap" do
   content = Present.new
   expect {content.unwrap}.to raise_error "No contents have been wrapped."
  end
